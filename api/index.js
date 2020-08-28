@@ -1,6 +1,6 @@
 module.exports = (req, res) => {
     https.get(decodeURI(req.body.jsonfile), (resp) => {
-
+        console.log(resp);
         let data = '';
         let q;
         // A chunk of data has been recieved.
